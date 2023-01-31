@@ -8,21 +8,21 @@ import static org.junit.Assert.assertEquals;
 
 public class TestMain {
     @Test
-    public void testStrangeDivisionIsDifferentFromZero1(){
+    public void testDivisionIsZeroGeneral(){
         int a = 3;
         int b = 2;
         assertEquals(Main.divisionIsZero(a, b), false);
     }
 
     @Test
-    public void testStrangeDivisionIsDifferentFromZero2(){
+    public void testDivisionIsZeroDenominatorZero(){
         int a = 3;
         int b = 0;
         assertEquals(Main.divisionIsZero(a, b), true);
     }
 
     @Test
-    public void testStrangeDivisionIsDifferentFromZero3(){
+    public void testDivisionIsZeroNumeratorZero(){
         int a = 0;
         int b = 3;
         assertEquals(Main.divisionIsZero(a, b), true);
